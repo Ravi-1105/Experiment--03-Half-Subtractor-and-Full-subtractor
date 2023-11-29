@@ -58,11 +58,14 @@ Diff = A ⊕ B ⊕ C B = A'C + A'B + BC
 
 ## Program:
 
-module fullsub(diff,carry,a,b,c);
-input a,b,c;
-output diff,carry;xor(diff,a,b,c);
-assign carry= (~a)&c | (~a)&b | (b&c);
-endmodule
+### HALF SUBTRACTOR
+
+
+
+### FULL SUBTRACTOR
+
+![image](https://github.com/Ravi-1105/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/139841688/28cab7e3-7e49-4ae7-9652-136be2749eb1)
+
 
 
 ## Truthtable
