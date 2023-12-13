@@ -58,14 +58,12 @@ Diff = A ⊕ B ⊕ C B = A'C + A'B + BC
 
 ## Program:
 
-### HALF SUBTRACTOR
-
-![image](https://github.com/Ravi-1105/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/139841688/863a4cf6-32c9-4fb8-9144-adc82d1bc23d)
-
-### FULL SUBTRACTOR
-
-![image](https://github.com/Ravi-1105/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/139841688/28cab7e3-7e49-4ae7-9652-136be2749eb1)
-
+module fullsub(diff,carry,a,b,c);
+input a,b,c;
+output diff,carry;
+xor(diff,a,b,c);
+assign carry= (~a)&c | (~a)&b | (b&c);
+endmodule
 
 
 ## Truthtable
@@ -93,4 +91,4 @@ Diff = A ⊕ B ⊕ C B = A'C + A'B + BC
 
 
 ## Result:
-Thus the half subtractor and full subtractor circuits are designed and the truth tables is verified using quartus software.
+Thus the half subtractor and full subtractor circuits are designed and the truth tables is verified using quartus software.
